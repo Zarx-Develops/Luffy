@@ -3154,7 +3154,8 @@ if(!isOwner) return reply(enviar.msg.dono)
 if(!q) return reply(`KD o nome do comando? Ex: ${prefix+command} menu`)
 let { key } = await blackmd.sendMessage(from, {text: "🔎 🄱🅄🅂🄲🄰🄽🄳🄾 🄲🄰🅂🄴 🔍"}, {quoted: seloctt})
 await sleep(1000)
-try { var [cmdgc, idusu] = q.replace(`/ `, `/`).replace(` /`, `/`).replace(` / `, `/`).split(`/`)
+try { 
+var [cmdgc, idusu] = q.replace(`/ `, `/`).replace(` /`, `/`).replace(` / `, `/`).split(`/`)
 gccmd = `${getCase(rmLetras(cmdgc))}`
 if(!idusu) return blackmd.sendMessage(from, {text: gccmd, edit: key}, {quoted: seloctt})
 envusu = identArroba(idusu)
@@ -3162,8 +3163,12 @@ blackmd.sendMessage(from, {text: `_Enviando a *case '${rmLetras(cmdgc)}':* no PV
 await sleep(500)
 blackmd.sendMessage(envusu, {text: `_Olá @${envusu.split(`@`)[0]}, ${tempo}... @${sender.split(`@`)[0]} te enviou a *case '${rmLetras(cmdgc)}':*_ 🥰`, mentions: [envusu, sender]})
 await sleep(1000)
-sendMess(envusu, gccmd) } catch(e) { console.log(e)
-blackmd.sendMessage(from, {text: `*[ ❗ ] Comando Não Encontrado ❌*`, edit: key}, {quoted: seloctt}) } }
+sendMess(envusu, gccmd)
+} catch(e) { 
+console.log(e);
+blackmd.sendMessage(from, {text: `*[ ❗ ] Comando Não Encontrado ❌*`, edit: key}, {quoted: seloctt})
+}
+}
 break
 
 case 'getlinha':
