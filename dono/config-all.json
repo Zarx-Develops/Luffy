@@ -1,0 +1,22 @@
+{
+  "botoes": true,
+  "forwarding": false,
+  "crtt": false,
+  "visualizarmsg": false,
+  "modoaluguel": false,
+  "API_KEY_ALEATORY": "SuaChaveAqui",
+  "API_KEY_SABRINA": "SuaChaveAqui",
+  "API_KEY_BLACK": "SuaChaveAqui",
+  "API_KEY_CONSULT": "SuaChaveAqui",
+  "stopcmdlist": false,
+  "blacksite": "https://api.exemplo.com",
+  "blackchannel": "channel_id",
+  "idchatofc": "chat_id",
+  "idprivategp": "group_id",
+  "dono1": "5511999999999",
+  "dono2": "5511999999999",
+  "dono3": "5511999999999",
+  "dono4": "5511999999999",
+  "dono5": "5511999999999",
+  "dono6": "5511999999999"
+}
